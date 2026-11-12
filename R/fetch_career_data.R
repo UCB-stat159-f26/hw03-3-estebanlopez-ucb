@@ -1,6 +1,11 @@
-#' @param player_name Character string of the names of players
-#' @return A clean data frame that is ready to plot
+#' Fetch career data from the tennis abstract website
+#'
+#' @param player_name A string of player names
+#' @return A df that ready for plotting
 #' @export
+fetch_career_data <- function(player_name) {
+  # ... function body ...
+}
 
 fetch_career_data <- function(player_name) {
   slug <- .format_player_slug(player_name)

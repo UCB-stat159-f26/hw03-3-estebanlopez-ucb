@@ -1,6 +1,11 @@
-#' @param df A cleaned data frame from fetch_career_data()
+#' Generate scatter plot 
+#'
+#' @param df Cleaned data frame 
 #' @return A ggplot2 
 #' @export
+plot_career_scatter <- function(df) {
+  # ... function body ...
+}
 plot_career_scatter <- function(df) {
   ggplot2::ggplot(df, ggplot2::aes(x = player_age, y = age_diff, color = result)) +
     ggplot2::geom_point(alpha = 0.5, size = 1.2) +
