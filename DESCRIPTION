@@ -1,0 +1,15 @@
+Package: tennisrpkg
+Title: A package to analyze and plot tennis data
+Version: 0.1.0
+Authors@R: person("Esteban", "Lopez", email = "estebanlopez@berkeley.edu", role = c("aut", "cre"))
+Description: Retrieves the career matches of a given player (e.g. Serena Williams, Rafael Nadal) from tennisabstract.com, and makes a plot like the NYT’s data visualization of HW2 (ignoring annotations).
+License: MIT
+Encoding: UTF-8
+Imports: 
+    jsonlite,
+    ggplot2,
+    dplyr,
+    stringr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
