@@ -2,16 +2,16 @@
 % Please edit documentation in R/fetch_career_data.R
 \name{fetch_career_data}
 \alias{fetch_career_data}
-\title{Fetch career data from the tennis abstract website}
+\title{Fetch and clean career data for a tennis player}
 \usage{
 fetch_career_data(player_name)
 }
 \arguments{
-\item{player_name}{A string of player names}
+\item{player_name}{Character string of the player's name}
 }
 \value{
-A df that ready for plotting
+A cleaned data frame of match results
 }
 \description{
-Fetch career data from the tennis abstract website
+Fetch and clean career data for a tennis player
 }

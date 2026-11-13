@@ -1,11 +1,8 @@
-#' Generate scatter plot 
+#' Generate scatter plot
 #'
-#' @param df Cleaned data frame 
-#' @return A ggplot2 
+#' @param df Cleaned data frame
+#' @return A ggplot2 object
 #' @export
-plot_career_scatter <- function(df) {
-  # ... function body ...
-}
 plot_career_scatter <- function(df) {
   ggplot2::ggplot(df, ggplot2::aes(x = player_age, y = age_diff, color = result)) +
     ggplot2::geom_point(alpha = 0.5, size = 1.2) +
@@ -15,5 +12,8 @@ plot_career_scatter <- function(df) {
       y = "Age Difference (Player - Opponent)",
       color = "Match Outcome"
     ) +
-    ggplot2::scale_color_manual(values = c("Win" = "#1a73e8", "Loss" = "#ea4335"))
+    ggplot2::scale_color_manual(
+      values = c("Win" = "#1a73e8", "Loss" = "#ea4335"),
+      drop = FALSE
+    )
 }

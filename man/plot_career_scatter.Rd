@@ -10,7 +10,7 @@ plot_career_scatter(df)
 \item{df}{Cleaned data frame}
 }
 \value{
-A ggplot2
+A ggplot2 object
 }
 \description{
 Generate scatter plot
