@@ -1,7 +1,8 @@
 test_that("string formatting helper creates PascalCase slugs", {
-  expect_equal(.format_player_slug("Serena Williams"), "Serenawilliams")
-  expect_equal(.format_player_slug("Novak Djokovic"), "Novakdjokovic")
-  expect_equal(.format_player_slug("  rafael-nadal 123 "), "Rafaelnadal")})
+  expect_equal(.format_player_slug("Serena Williams"), "SerenaWilliams")
+  expect_equal(.format_player_slug("Novak Djokovic"), "NovakDjokovic")
+  expect_equal(.format_player_slug("  rafael-nadal 123 "), "RafaelNadal")
+})
 
 test_that("female and male fixtures parse and clean properly", {f_path <- test_path("fixtures", "FemalePlayerCareer.JS")
   m_path <- test_path("fixtures", "MalePlayerCareer.JS")
